@@ -1,0 +1,84 @@
+/* Animations Keyframes High Performance */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* Classes de Animação */
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    will-change: transform, opacity;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+.scroll-indicator.bounce {
+    animation: bounce 2.5s infinite;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.scroll-indicator:hover { color: var(--primary); }
+
+/* Scroll Reveal States */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glow Borders */
+.glow-border {
+    position: relative;
+    box-shadow: 0 0 20px rgba(102, 172, 197, 0.15);
+    transition: box-shadow 0.4s;
+}
+.glow-border:hover {
+    box-shadow: 0 0 35px rgba(102, 172, 197, 0.5);
+}
+
+/* Icon Circles */
+.icon-circle {
+    width: 32px;
+    height: 32px;
+    background: rgba(146, 221, 200, 0.2);
+    color: var(--success);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}

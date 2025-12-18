@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PS Irrigação - Soluções completas em irrigação de precisão, peças e assistência técnica especializada. Motobombas KSB, Motores WEG e Pivôs Centrais.">
+    <meta name="theme-color" content="#2A3A44">
+    <meta name="author" content="Guilherme Franklin">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PS Irrigação | Tecnologia e Eficiência">
+    <meta property="og:description" content="Tecnologia que transforma água em produtividade. Projetos, Locação e Assistência Técnica.">
+    <meta property="og:image" content="https://seudominio.com/img/logo.png">
+    
+    <title>PS Irrigação | Tecnologia e Eficiência</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <link rel="preload" href="img/PIVÔ.jpg" as="image">
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo-area" aria-label="PS Irrigação Home">
+                <img src="img/logo.png" alt="PS Irrigação Logo" class="logo-img" width="150" height="50">
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#empresa" class="nav-link">Empresa</a>
+                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="#locacao" class="nav-link">Locação</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#contato" class="btn btn-primary">
+                    Contato
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="icon-btn" aria-label="Abrir Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu-btn" class="icon-btn close-btn" aria-label="Fechar Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#empresa" class="mobile-link">Empresa</a>
+                <a href="#produtos" class="mobile-link">Produtos</a>
+                <a href="#locacao" class="mobile-link">Locação</a>
+                <a href="#servicos" class="mobile-link">Serviços</a>
+                <a href="#contato" class="mobile-link highlight">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section parallax-container">
+            <div class="hero-bg-wrapper">
+                <img src="img/PIVÔ.jpg" alt="Campo irrigado com pivô central" class="hero-bg parallax-element" data-speed="0.5">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="container hero-content">
+                <span class="badge fade-in-up">Desde 1996</span>
+                <h1 class="hero-title fade-in-up delay-100">
+                    <span class="hero-title-muted">Tecnologia que transforma água em </span>
+                    <span class="text-primary glow">produtividade</span>.
+                </h1>
+                <p class="hero-desc fade-in-up delay-200">
+                    PS Irrigação, tecnologia e produtividade que nascem no solo e crescem com você.
+                </p>
+                <div class="hero-actions fade-in-up delay-300">
+                    <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+                    <a href="#produtos" class="btn btn-outline">Conhecer Soluções</a>
+                </div>
+            </div>
+
+            <a href="#empresa" class="scroll-indicator bounce" aria-label="Rolar para baixo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+        </section>
+
+        <div class="partners-bar">
+            <div class="container partners-flex">
+                <h4 style="color:var(--text); opacity:0.6; font-weight:600; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">Parceiros Oficiais:</h4>
+                <div class="partner-text">KSB</div>
+                <div class="partner-text">WEG</div>
+                <div class="partner-text">TIGRE</div>
+                <div class="partner-text">SCHNEIDER</div>
+                <div class="partner-text">MWM</div>
+            </div>
+        </div>
+
+        <section id="empresa" class="section bg-light">
+            <div class="container grid-2-cols">
+                <div class="image-wrapper scroll-reveal parallax-mouse" data-tilt>
+                    <img src="img/Lojas.gif" alt="Sede PS Irrigação em Barretos/SP e Lojas em Guaíra/SP e Perdizes/MG" class="rounded-img shadow-neo" loading="lazy">
+                    <div class="floating-card">
+                        <div class="icon-mini">📍</div>
+                        <div>
+                            <strong>Sede Própria</strong>
+                            <span>Barretos/SP</span>
+                        </div>
+                        <div class="icon-mini">🏬</div>
+                        <div>
+                            <strong>Lojas em</strong>
+                            <span>Guaíra/SP</span>
+                            <strong>e</strong>
+                            <span>Perdizes/MG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-content scroll-reveal delay-200">
+                    <h2 class="section-subtitle">Tradição e Inovação</h2>
+                    <h3 class="section-heading">Impulsionando o agronegócio desde 1996</h3>
+                    <p class="paragraph">
+                        A PS Irrigação evoluiu de uma base técnica em Barretos e hoje conta com unidades em Barretos/SP, Guaíra/SP e Perdizes/MG, tornando-se referência regional em gestão hídrica. Combinamos expertise técnica com as marcas mais respeitadas do mundo (WEG, KSB, Tigre) para garantir que sua lavoura nunca pare.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="icon-circle check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            Distribuidor Autorizado
+                        </li>
+                        <li>
+                            <span class="icon-circle check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            Equipe técnica especializada
+                        </li>
+                        <li>
+                            <span class="icon-circle check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            Projetos Hidráulicos Customizados
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="section bg-white relative">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <h2 class="section-subtitle">Nossas Soluções</h2>
+                    <p class="section-desc">Equipamentos de alta performance e durabilidade extrema.</p>
+                </div>
+
+                <div class="grid-3-cols">
+                    <article class="card product-card scroll-reveal delay-100">
+                        <div class="card-image">
+                            <img src="img/mbksbeshinaider.jpeg" alt="Motobomba KSB e Shinaider" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Motobombas</h4>
+                            <p>Bombas KSB e Schneider de alto rendimento para captação e distribuição. Centrífugas e Submersas.</p>
+                            <a href="#contato" class="link-arrow">Solicitar Cotação →</a>
+                        </div>
+                    </article>
+
+                    <article class="card product-card scroll-reveal delay-200">
+                        <div class="card-image">
+                            <img src="img/motorweg.jpeg" alt="Motor Elétrico WEG" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Motores Elétricos</h4>
+                            <p>Toda a linha WEG W22 Premium. Eficiência energética IR3/IR4 e robustez para o campo.</p>
+                            <a href="#contato" class="link-arrow">Solicitar Cotação →</a>
+                        </div>
+                    </article>
+
+                    <article class="card product-card scroll-reveal delay-300">
+                        <div class="card-image">
+                            <img src="img/soldandotuboaz.JPG" alt="Soldando Tubo de Aço zincado" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h4>Peças & Tecnologia</h4>
+                            <p>Tubos, conexões, aspersores e pivôs centrais. Reposição rápida para gotejamento.</p>
+                            <a href="#contato" class="link-arrow">Solicitar Cotação →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="locacao" class="section bg-dark text-white relative overflow-hidden">
+            <div class="bg-shape-right"></div>
+            <div class="container grid-2-cols relative z-10">
+                <div class="text-content scroll-reveal">
+                    <span class="badge-outline">Novo Serviço</span>
+                    <h2 class="section-heading text-white">Flexibilidade para sua Safra</h2>
+                    <p class="paragraph text-gray">
+                        A PS Irrigação oferece um parque completo de equipamentos para locação. Ideal para demandas sazonais, testes de viabilidade ou emergências (quebra de equipamento próprio).
+                    </p>
+                    <div class="grid-2-cols-small mt-8">
+                        <div class="feature-box">
+                            <svg class="icon-primary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.74 5.88a5.75 5.75 0 0 1-8.1 8.15 5.75 5.75 0 0 1-3.38-7.79z"></path><path d="M12 2.69l-5.74 5.88"></path></svg>
+                            <h5>Motobombas</h5>
+                            <p class="text-sm">Diesel e Elétricas (75cv a 300cv).</p>
+                        </div>
+                        <div class="feature-box">
+                            <svg class="icon-primary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"></path><path d="M12 2v20"></path></svg>
+                            <h5>Tubulação</h5>
+                            <p class="text-sm">Engate rápido (Zincado).</p>
+                        </div>
+                    </div>
+                    <a href="#contato" class="btn btn-primary mt-6">Consultar Disponibilidade</a>
+                </div>
+                <div class="image-wrapper scroll-reveal delay-200">
+                    <img src="img/peças.png" alt="Tubos e Conexões" class="rounded-img shadow-lg glow-border" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <h2 class="section-subtitle">Serviços Técnicos</h2>
+                    <p class="section-desc">Não vendemos apenas peças; entregamos operação contínua.</p>
+                </div>
+
+                <div class="grid-3-cols">
+                    <div class="service-card scroll-reveal">
+                        <div class="icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                        </div>
+                        <h3>Projetos Hidráulicos</h3>
+                        <p>Dimensionamento de adutoras e bombeamento visando máxima eficiência energética e hídrica.</p>
+                    </div>
+
+                    <div class="service-card scroll-reveal delay-100">
+                        <div class="icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <h3>Manutenção em Oficina</h3>
+                        <p>Rebobinamento de motores, reparo de bombas e montagem de painéis de comando.</p>
+                    </div>
+
+                    <div class="service-card scroll-reveal delay-200">
+                        <div class="icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        </div>
+                        <h3>Assistência Volante</h3>
+                        <p>Técnicos equipados prontos para atendimento <i>in loco</i> na sua propriedade rural.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section bg-white">
+            <div class="container grid-2-cols">
+                <div class="contact-info scroll-reveal">
+                    <h2 class="section-subtitle">Fale Conosco</h2>
+                    <h3 class="section-heading mb-6">Estamos à disposição</h3>
+                    
+                    <div class="contact-item">
+                        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                        <div>
+                            <strong>Endereço</strong>
+                            <p>Rodovia Brigadeiro Faria Lima, Km 425 + 300 metros, s/n -Bairro - Jardim Caicara, Barretos - SP, 14786-115</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                        <div>
+                            <strong>Telefones</strong>
+                            <p><a href="tel:1733281146" class="hover-link">(17) 3328-1146</a> (Vendas)</p>
+                            <p><a href="tel:1733220111" class="hover-link">(17) 3322-0111</a> (Geral)</p>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper mt-6 glow-border">
+                         <iframe 
+                            title="Localização PS Irrigação"
+                            src="https://www.google.com/maps?q=-20.5397233,-48.5957365&hl=pt-BR&z=17&output=embed" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper scroll-reveal delay-200">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto">
+                                <option>Orçamento de Produtos</option>
+                                <option>Locação de Equipamentos</option>
+                                <option>Assistência Técnica</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="img/logo.png" alt="PS Irrigação" class="footer-logo">
+                <p class="footer-text">Soluções integradas com qualidade e compromisso com o produtor rural. Tecnologia de ponta para o campo.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#locacao">Locação</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul class="footer-contact">
+                    <li>(17) 3328-1146</li>
+                    <li>vendas@psirrigacao.com.br</li>
+                    <li>Barretos/SP</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+                    <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-btn" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por Guilherme Franklin © Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/scroll-animations.js"></script>
+    <script type="module" src="js/mouse-effects.js"></script>
+</body>
+</html>
